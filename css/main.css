@@ -64,7 +64,7 @@
       border-radius: 33%;
       border: solid 3px #57a6d4; }
   .menu .nav-item {
-    transform: translate3d(600px, 0, 0);
+    transform: translate3d(1200px, 0, 0);
     transition: all 0.7s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
@@ -94,6 +94,9 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.8s; }
+
+.nav-item:nth-child(5) {
+  transition-delay: 1.0s; }
 
 * {
   box-sizing: border-box; }
@@ -166,7 +169,8 @@ main {
   text-align: left;
   display: grid;
   grid-gap: 1.5rem;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio"
+ "job1 job2 job3";
   grid-template-areas: repeat(3, 1fr); }
 
 .bio-image {
@@ -287,7 +291,11 @@ main {
       background-repeat: round; }
   .about-info {
     text-align: center;
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
